@@ -1,0 +1,7 @@
+- Layout AngularUI
+- Add Navigation bar to scroll directly to selections
+- Add Input parameter to select options to all car selector components
+- Add Output parameter to calculate price
+- Subscribe to query param / update url
+- Add order functionality to ui
+- Deploy docker image (spring bootBuildImage) to AWS EC2 -> add github action
