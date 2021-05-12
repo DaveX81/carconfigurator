@@ -1,0 +1,4 @@
+allprojects {
+    group = 'net.pentzlin'
+    version = '0.0.1-SNAPSHOT'
+}

@@ -1,0 +1,18 @@
+<mat-card style="margin-top:11px;">
+  <mat-card-header>
+    <mat-card-title>Car Engine</mat-card-title>
+  </mat-card-header>
+  <mat-card-content>
+    <mat-form-field appearance="fill">
+      <mat-label>Car Engines</mat-label>
+      <mat-select [(value)]="selectedEngineId">
+        <mat-option></mat-option>
+        <mat-option [value]="option.id" *ngFor="let option of carEngines">{{ option.power }}PS {{ option.price }}€</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <p>You selected: {{carEngines[selectedEngineId-1]?.power}}PS</p>
+  </mat-card-content>
+</mat-card>
+
+
+

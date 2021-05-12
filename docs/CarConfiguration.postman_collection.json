@@ -1,0 +1,185 @@
+{
+	"info": {
+		"_postman_id": "4ad1572f-b141-46ee-988e-66cf6c5058ef",
+		"name": "CarConfiguration",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Get all order",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/vehicles",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"vehicles"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Save Order",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"price\": 62800,\n    \"car\": {\n        \"id\": 1,\n        \"brand\": \"BMW\",\n        \"model\": \"X6\",\n        \"basePrice\": 60000\n    },\n    \"rims\": {\n        \"id\": 1,\n        \"name\": \"LMR TurbinenStyling\",\n        \"size\": 16,\n        \"price\": 0\n    },\n    \"engine\": {\n        \"id\": 1,\n        \"power\": 156,\n        \"price\": 0\n    },\n    \"painting\": {\n        \"id\": 1,\n        \"color\": \"WHITE\",\n        \"price\": 900\n    },\n    \"extraEquipment\": [\n        {\n            \"id\": 1,\n            \"name\": \"Navigation\",\n            \"price\": 1900\n        }\n    ]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/order/configuration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all ordered configurations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/order/configuration",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"order",
+						"configuration"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all cars",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/configuration/car",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configuration",
+						"car"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all engines",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/configuration/engine",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configuration",
+						"engine"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all extras",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/configuration/extraEquipment",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configuration",
+						"extraEquipment"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all paintings",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/configuration/painting",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configuration",
+						"painting"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get all rims",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/configuration/rims",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"configuration",
+						"rims"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
